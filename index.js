@@ -131,7 +131,7 @@ function setLyrics() {
 */
 
 function setUpSc() {
-    fetch("http://35.221.213.98:3000/api/getSc", { method: "GET" })
+    fetch("http://35.221.213.98:3000/api/getSc/?grade=1&cls=7", { method: "GET" })
         .then((res) => res.json())
         .then((res) => {
             console.log(res)
